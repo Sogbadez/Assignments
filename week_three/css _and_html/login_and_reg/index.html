@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Page</title>
+</head>
+<body>
+<!-- Form action to link to success page -->
+  <form action="successpage.html">
+    <div class="Container">
+      
+      <!--       Heading of Page -->
+      <h1 style="text-align:center"> Registration Page </h1>
+      <p style="text-align:center"> Please fill in the form to register</p>
+      <hr>
+      
+      <!--  Sections of Registration Page      -->
+      <label> First Name</label>
+      <input type="text" placeholder="Enter your first name " name="firstname" id="name" required>
+
+      <label> Last Name</label>
+      <input type="text" placeholder="Enter your last name " name="lastname" id="name" required>
+
+      <label> Phone Number</label>
+      <input type="number" placeholder="Enter your Phone Number " name="phonenumber" id="number" required>
+      
+      <label> Email</label>
+      <input type="text" placeholder="Enter your Email " name="Email" id="email" required>
+
+      <!-- Section for gender(select field)  -->
+      <label for="gender"> Select your gender </label>
+      <select name="gender">
+        <option value="none" selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Prefer Not To Say</option>
+      </select>
+
+<!-- Date selection field -->
+      <label for="birthday">Birthday</label>
+      <input type="date" id="birthday" name="birthday" required>  
+      
+      <!-- Password Section -->
+      <label>Password</label>
+      <input type="password" placeholder="type in password" name="psw" id="psw" required>
+
+       <!-- Favourite colour selection -->
+     <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="red" required>
+      
+      <hr>
+      <p>By registering, you agree to our <a href="#">Terms & Conditions.</a></p>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </form>
+</body>
+</html>
